@@ -9,6 +9,8 @@ photomultiplier detector characterisation.
 
 ![Dimensions](https://github.com/PaulZC/Nanosecond_LED_Flasher_Shield/blob/master/img/Dimensions.JPG)
 
+The full schematic is available [here](https://github.com/PaulZC/Nanosecond_LED_Flasher_Shield/blob/master/Hardware/Schematic.pdf)
+
 The LED is driven by the new [LMG1025 from Texas Instruments](http://www.ti.com/product/LMG1025-Q1).
 Designed for automotive LIDAR applications, this gate driver has typical rise and fall times of 650ps
 and 850ps and can produce 5V pulse widths as short as 1.25ns.
@@ -20,7 +22,7 @@ The functional block diagram for the LMG1025 is:
 ![LMG1025](https://github.com/PaulZC/Nanosecond_LED_Flasher_Shield/blob/master/img/LMG1025.JPG)
 
 The LMG1025 is designed to drive a GaN FET to switch a LIDAR source, but with pull-up and pull-down
-current limits of 7A and 5A, it can drive a standard or high-brightness LED directly.
+current limits of 7A and 5A it can of course drive a standard or high-brightness LED directly.
 
 The truth table for the LMG1025 is:
 
@@ -65,11 +67,11 @@ The Arduino pin allocation is:
 - D10: DS1023 delay bit 7
 - D11: DS1023 delay bit 6
 - D12: DS1023 delay bit 5
-- D13: reserved for LED_BUILTIN (but can also be used to the reception of the GNSS time pulses)
+- D13: reserved for LED_BUILTIN (but can also be used to indicate the reception of the GNSS time pulses)
 - A0/D14: the photorelay for R2
-- A1/D15: the photorelay for R2
-- A2/D16: the photorelay for R2
-- A3/D17: the photorelay for R2
+- A1/D15: the photorelay for R3
+- A2/D16: the photorelay for R4
+- A3/D17: the photorelay for R5
 - A4/D18: the MAX-M8Q time pulse (to allow the LED current to be changed between LED pulses)
 - A5/D19: enables / disables LED pulses via the 74HCT1G125 buffer
 

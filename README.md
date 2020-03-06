@@ -1,4 +1,4 @@
-# Nanosecond_LED_Flasher_Shield
+# Nanosecond LED Flasher Shield
  
 A nanosecond LED flasher which provides digital control of both pulse width and LED current. Designed to aid
 photomultiplier detector characterisation.

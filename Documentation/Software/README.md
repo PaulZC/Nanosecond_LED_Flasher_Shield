@@ -29,6 +29,8 @@ The Serial baud rate should be set to 9600. Set the line ending to LF. The seria
 - ASCII >                : 3E Hex
 - LF                     : 0A Hex
 
+e.g.:  <000100001111>\n will produce ~2.5ns pulses ((16 x 0.25ns) - 1.5ns) of maximum brightness (all four photorelays are on)
+
 A shorter message can be sent if you only want to change the pulse width:
 - ASCII <                : 3C Hex
 - Pulse Delay P7 (MSB)   : ASCII 0 or 1 (30 or 31 Hex)
@@ -42,5 +44,12 @@ A shorter message can be sent if you only want to change the pulse width:
 - ASCII >                : 3E Hex
 - LF                     : 0A Hex
 
-The code will: parse the incoming serial data, check teh format is valid, set the DS1023 pulse width,
+e.g.:  <001000001111>\n will produce ~6.5ns pulses ((32 x 0.25ns) - 1.5ns)
+
+The code will: parse the incoming serial data, check the format is valid, set the DS1023 pulse width,
 and the state of the four photorelays.
+
+The rise time of the LED forward voltage will depend on the resistance value. More resistance equals
+slower rise times as well as lower current (and lower peak forward voltage too). The actual pulse width,
+in terms of how long the LED is actually emitting photons for, is equal to the amount of time the forward voltage
+exceeds approximately 3.1V.

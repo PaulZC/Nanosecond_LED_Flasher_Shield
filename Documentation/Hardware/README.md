@@ -80,7 +80,7 @@ The Arduino pin allocation is:
 The time pulse signal produced by the MAX-M8Q GNSS receiver is used to trigger the DS1023. The frequency of the time pulse
 signal can be defined by the Arduino code via software serial (D2 and D3). The LED flashes on the rising edge of the time pulse.
 The time pulse signal is connected to the Arduino pin A4/D18 so that the LED current can be adjusted between pulses on the
-falling edge of the signal. It is possible to change the current for adjacent LED pulses from one of the sixteen permutaions
+falling edge of the signal. It is possible to change the current for adjacent LED pulses from one of the sixteen permutations
 to any other. The Arduino code can produce repetitive pulse patterns using any of the sixteen states.
 
 ![Level_Shift](https://github.com/PaulZC/Nanosecond_LED_Flasher_Shield/blob/master/img/Level_Shift.JPG)

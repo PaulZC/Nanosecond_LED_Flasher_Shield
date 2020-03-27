@@ -52,4 +52,4 @@ and the state of the four photorelays.
 The rise time of the LED forward voltage will depend on the resistance value. More resistance equals
 slower rise times as well as lower current (and lower peak forward voltage too). The actual pulse width,
 in terms of how long the LED is actually emitting photons for, is equal to the amount of time the forward voltage
-exceeds approximately 3.1V.
+exceeds approximately 3.1V (for the Bivar UV3TZ-400-15 400nm InGaN/Sapphire UV LED).

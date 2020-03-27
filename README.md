@@ -24,6 +24,18 @@ The shield is designed to be mounted on a [5V ATmega328 Arduino Uno or similar](
 (Please note that the shield requires 5V I/O signals for correct operation and will not work if mounted
 on a 3.3V Arduino Zero or similar.)
 
+## Example Performance
+
+In the image below:
+- the yellow trace shows the anode voltage of a Bivar UV3TZ-400-15 UV LED being driven by the shield at maximum brightness (equivalent series resistance approx. 14 ohms) (1V per division)
+- the green trace shows the corresponding fast output of a SensL J-series silicon photomultiplier (50mV per division)
+- the timebase is 2 nsec per division
+
+![max_brightness](https://github.com/PaulZC/Nanosecond_LED_Flasher_Shield/blob/master/img/max_brightness.png)
+
+The overlapping yellow traces show the LED pulse width being increased in 0.25 nsec increments. The corresponding green traces show how the peak output of
+the SiPM increases in line with the LED pulse width and the number of photons emitted during each pulse.
+
 ## Repository Contents
 
 - **/Documentation** - Documentation for the hardware and software

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.2">
+<eagle version="9.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -11150,25 +11150,6 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <description>&lt;b&gt;https://componentsearchengine.com&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
 <packages>
-<package name="DIOM179X85N">
-<description>&lt;b&gt;603&lt;/b&gt;&lt;br&gt;
-</description>
-<smd name="1" x="-0.8" y="0" dx="1.25" dy="0.75" layer="1"/>
-<smd name="2" x="0.8" y="0" dx="1.25" dy="0.75" layer="1"/>
-<text x="0" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
-<text x="0" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
-<wire x1="-1.675" y1="0.75" x2="1.675" y2="0.75" width="0.05" layer="51"/>
-<wire x1="1.675" y1="0.75" x2="1.675" y2="-0.75" width="0.05" layer="51"/>
-<wire x1="1.675" y1="-0.75" x2="-1.675" y2="-0.75" width="0.05" layer="51"/>
-<wire x1="-1.675" y1="-0.75" x2="-1.675" y2="0.75" width="0.05" layer="51"/>
-<wire x1="-0.85" y1="0.45" x2="0.85" y2="0.45" width="0.1" layer="51"/>
-<wire x1="0.85" y1="0.45" x2="0.85" y2="-0.45" width="0.1" layer="51"/>
-<wire x1="0.85" y1="-0.45" x2="-0.85" y2="-0.45" width="0.1" layer="51"/>
-<wire x1="-0.85" y1="-0.45" x2="-0.85" y2="0.45" width="0.1" layer="51"/>
-<wire x1="-0.85" y1="0.075" x2="-0.475" y2="0.45" width="0.1" layer="51"/>
-<wire x1="0.85" y1="0.45" x2="-1.175" y2="0.45" width="0.2" layer="21"/>
-<wire x1="-0.85" y1="-0.45" x2="0.85" y2="-0.45" width="0.2" layer="21"/>
-</package>
 <package name="TLP3475RTPF">
 <description>&lt;b&gt;11-3D1&lt;/b&gt;&lt;br&gt;
 </description>
@@ -11196,16 +11177,6 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 </package>
 </packages>
 <symbols>
-<symbol name="CD0603-B00340">
-<wire x1="5.08" y1="0" x2="10.16" y2="2.54" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-2.54" x2="10.16" y2="2.54" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-2.54" x2="5.08" y2="0" width="0.254" layer="94"/>
-<wire x1="5.08" y1="2.54" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
-<text x="11.43" y="5.08" size="1.778" layer="95" align="center-left">&gt;NAME</text>
-<text x="11.43" y="2.54" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
-<pin name="K" x="0" y="0" visible="pad" length="middle"/>
-<pin name="A" x="15.24" y="0" visible="pad" length="middle" rot="R180"/>
-</symbol>
 <symbol name="TLP3475R(TP,F">
 <wire x1="5.08" y1="2.54" x2="30.48" y2="2.54" width="0.254" layer="94"/>
 <wire x1="30.48" y1="-5.08" x2="30.48" y2="2.54" width="0.254" layer="94"/>
@@ -11220,30 +11191,6 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="CD0603-B00340" prefix="D">
-<description>&lt;b&gt;Diode Schottky Signal 45V 30mA 0603 Bourns CD0603-B00340, SMT Schottky Diode, 45V 30mA, 2-Pin 0603&lt;/b&gt;&lt;p&gt;
-Source: &lt;a href="https://www.arrow.com/en/products/cd0603-b00340/bourns"&gt; Datasheet &lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="CD0603-B00340" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="DIOM179X85N">
-<connects>
-<connect gate="G$1" pin="A" pad="2"/>
-<connect gate="G$1" pin="K" pad="1"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="ARROW_PART_NUMBER" value="CD0603-B00340" constant="no"/>
-<attribute name="DESCRIPTION" value="Diode Schottky Signal 45V 30mA 0603 Bourns CD0603-B00340, SMT Schottky Diode, 45V 30mA, 2-Pin 0603" constant="no"/>
-<attribute name="HEIGHT" value="0.85mm" constant="no"/>
-<attribute name="MANUFACTURER_NAME" value="Bourns" constant="no"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="CD0603-B00340" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="TLP3475R(TP,F" prefix="K">
 <description>&lt;b&gt;Solid State Relays - PCB Mount Photo-IC 3mA 50V 5000Vrms&lt;/b&gt;&lt;p&gt;
 Source: &lt;a href="http://toshiba.semicon-storage.com/info/docget.jsp?did=55304&amp;prodName=TLP3475R"&gt; Datasheet &lt;/a&gt;</description>
@@ -11537,31 +11484,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-0.9" y1="0.625" x2="0.9" y2="0.625" width="0.2032" layer="21"/>
 <wire x1="-0.9" y1="-0.625" x2="0.9" y2="-0.625" width="0.2032" layer="21"/>
 </package>
-<package name="SOD-523">
-<description>SOD-523 (Small Outline Diode)</description>
-<smd name="C" x="0.7" y="0" dx="0.4" dy="0.4" layer="1"/>
-<smd name="A" x="-0.7" y="0" dx="0.4" dy="0.4" layer="1"/>
-<wire x1="-0.625" y1="-0.425" x2="0.625" y2="-0.425" width="0.127" layer="21"/>
-<wire x1="0.625" y1="0.425" x2="-0.625" y2="0.425" width="0.127" layer="21"/>
-<wire x1="-0.6" y1="-0.4" x2="0.3" y2="-0.4" width="0.127" layer="51"/>
-<wire x1="0.3" y1="-0.4" x2="0.6" y2="-0.4" width="0.127" layer="51"/>
-<wire x1="0.6" y1="-0.4" x2="0.6" y2="-0.1" width="0.127" layer="51"/>
-<wire x1="0.6" y1="-0.1" x2="0.6" y2="0.1" width="0.127" layer="51"/>
-<wire x1="0.6" y1="0.1" x2="0.6" y2="0.4" width="0.127" layer="51"/>
-<wire x1="0.6" y1="0.4" x2="0.3" y2="0.4" width="0.127" layer="51"/>
-<wire x1="0.3" y1="0.4" x2="-0.6" y2="0.4" width="0.127" layer="51"/>
-<wire x1="-0.6" y1="0.4" x2="-0.6" y2="0.1" width="0.127" layer="51"/>
-<wire x1="-0.6" y1="0.1" x2="-0.6" y2="-0.1" width="0.127" layer="51"/>
-<wire x1="-0.6" y1="-0.1" x2="-0.6" y2="-0.4" width="0.127" layer="51"/>
-<wire x1="0.6" y1="0.1" x2="0.8" y2="0.1" width="0.127" layer="51"/>
-<wire x1="0.8" y1="0.1" x2="0.8" y2="-0.1" width="0.127" layer="51"/>
-<wire x1="0.8" y1="-0.1" x2="0.6" y2="-0.1" width="0.127" layer="51"/>
-<wire x1="-0.6" y1="-0.1" x2="-0.8" y2="-0.1" width="0.127" layer="51"/>
-<wire x1="-0.6" y1="0.1" x2="-0.8" y2="0.1" width="0.127" layer="51"/>
-<wire x1="-0.8" y1="0.1" x2="-0.8" y2="-0.1" width="0.127" layer="51"/>
-<wire x1="0.3" y1="0.4" x2="0.3" y2="-0.4" width="0.127" layer="51"/>
-<wire x1="1.1176" y1="0.3048" x2="1.1176" y2="-0.3048" width="0.2032" layer="21"/>
-</package>
 <package name="SMA-DIODE">
 <description>&lt;B&gt;Diode&lt;/B&gt;
 &lt;p&gt;Basic SMA packaged diode. Good for reverse polarization protection. Common part #: MBRA140&lt;/p&gt;
@@ -11606,6 +11528,31 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="0" y="1.016" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
 <text x="0" y="-1.6002" size="0.6096" layer="27" font="vector" ratio="20" align="bottom-center">&gt;Value</text>
 <wire x1="-2.0574" y1="-0.6096" x2="-2.0574" y2="0.5842" width="0.127" layer="21"/>
+</package>
+<package name="SOD-523">
+<description>SOD-523 (Small Outline Diode)</description>
+<smd name="C" x="0.7" y="0" dx="0.4" dy="0.4" layer="1"/>
+<smd name="A" x="-0.7" y="0" dx="0.4" dy="0.4" layer="1"/>
+<wire x1="-0.625" y1="-0.425" x2="0.625" y2="-0.425" width="0.2032" layer="21"/>
+<wire x1="0.625" y1="0.425" x2="-0.625" y2="0.425" width="0.2032" layer="21"/>
+<wire x1="-0.6" y1="-0.4" x2="0.3" y2="-0.4" width="0.127" layer="51"/>
+<wire x1="0.3" y1="-0.4" x2="0.6" y2="-0.4" width="0.127" layer="51"/>
+<wire x1="0.6" y1="-0.4" x2="0.6" y2="-0.1" width="0.127" layer="51"/>
+<wire x1="0.6" y1="-0.1" x2="0.6" y2="0.1" width="0.127" layer="51"/>
+<wire x1="0.6" y1="0.1" x2="0.6" y2="0.4" width="0.127" layer="51"/>
+<wire x1="0.6" y1="0.4" x2="0.3" y2="0.4" width="0.127" layer="51"/>
+<wire x1="0.3" y1="0.4" x2="-0.6" y2="0.4" width="0.127" layer="51"/>
+<wire x1="-0.6" y1="0.4" x2="-0.6" y2="0.1" width="0.127" layer="51"/>
+<wire x1="-0.6" y1="0.1" x2="-0.6" y2="-0.1" width="0.127" layer="51"/>
+<wire x1="-0.6" y1="-0.1" x2="-0.6" y2="-0.4" width="0.127" layer="51"/>
+<wire x1="0.6" y1="0.1" x2="0.8" y2="0.1" width="0.127" layer="51"/>
+<wire x1="0.8" y1="0.1" x2="0.8" y2="-0.1" width="0.127" layer="51"/>
+<wire x1="0.8" y1="-0.1" x2="0.6" y2="-0.1" width="0.127" layer="51"/>
+<wire x1="-0.6" y1="-0.1" x2="-0.8" y2="-0.1" width="0.127" layer="51"/>
+<wire x1="-0.6" y1="0.1" x2="-0.8" y2="0.1" width="0.127" layer="51"/>
+<wire x1="-0.8" y1="0.1" x2="-0.8" y2="-0.1" width="0.127" layer="51"/>
+<wire x1="0.3" y1="0.4" x2="0.3" y2="-0.4" width="0.127" layer="51"/>
+<wire x1="1.1176" y1="0.3048" x2="1.1176" y2="-0.3048" width="0.2032" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -13615,7 +13562,6 @@ Used as a test point connection for pogo pins or other debugging tools.
 <part name="U$4" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="R12" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="10K"/>
 <part name="GND35" library="supply1" deviceset="GND" device=""/>
-<part name="D2" library="SamacSys_Parts" deviceset="CD0603-B00340" device=""/>
 <part name="U$5" library="microbuilder" deviceset="GND" device=""/>
 <part name="U3" library="ubloxLib" deviceset="MAX-M8" device=""/>
 <part name="U$35" library="microbuilder" deviceset="GND" device=""/>
@@ -13655,6 +13601,7 @@ Used as a test point connection for pogo pins or other debugging tools.
 <part name="TP1" library="SparkFun-Connectors" deviceset="TEST-POINT" device="POGO_PTH"/>
 <part name="TP2" library="SparkFun-Connectors" deviceset="TEST-POINT" device="POGO_PTH"/>
 <part name="TP3" library="SparkFun-Connectors" deviceset="TEST-POINT" device="POGO_PTH"/>
+<part name="D2" library="SparkFun-DiscreteSemi" deviceset="DIODE-SCHOTTKY" device="-PMEG4005EJ" value="0.5A/40V/420mV"/>
 </parts>
 <sheets>
 <sheet>
@@ -14239,9 +14186,6 @@ Programmable Timing Element
 <instance part="GND35" gate="1" x="251.46" y="154.94" smashed="yes">
 <attribute name="VALUE" x="248.92" y="152.4" size="1.778" layer="96"/>
 </instance>
-<instance part="D2" gate="G$1" x="152.4" y="208.28" smashed="yes" rot="R270">
-<attribute name="NAME" x="154.94" y="201.93" size="1.778" layer="95" rot="R270" align="center-left"/>
-</instance>
 <instance part="U$5" gate="G$1" x="99.06" y="40.64" smashed="yes">
 <attribute name="VALUE" x="97.536" y="38.1" size="1.27" layer="96"/>
 </instance>
@@ -14299,6 +14243,10 @@ Programmable Timing Element
 </instance>
 <instance part="SUPPLY1" gate="G$1" x="228.6" y="88.9" smashed="yes">
 <attribute name="VALUE" x="228.6" y="91.694" size="1.778" layer="96" align="bottom-center"/>
+</instance>
+<instance part="D2" gate="G$1" x="152.4" y="200.66" smashed="yes" rot="R90">
+<attribute name="NAME" x="150.368" y="198.12" size="1.778" layer="95" font="vector" rot="R90"/>
+<attribute name="VALUE" x="156.972" y="198.12" size="1.778" layer="96" font="vector" rot="R90" align="top-left"/>
 </instance>
 </instances>
 <busses>
@@ -14396,9 +14344,9 @@ Programmable Timing Element
 <wire x1="83.82" y1="127" x2="83.82" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="D2" gate="G$1" pin="K"/>
 <pinref part="U$4" gate="G$1" pin="3.3V"/>
-<wire x1="152.4" y1="208.28" x2="152.4" y2="210.82" width="0.1524" layer="91"/>
+<pinref part="D2" gate="G$1" pin="C"/>
+<wire x1="152.4" y1="203.2" x2="152.4" y2="210.82" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="D1" gate="G$1" pin="A"/>
@@ -14437,9 +14385,10 @@ Programmable Timing Element
 <pinref part="R13" gate="G$1" pin="1"/>
 <wire x1="142.24" y1="193.04" x2="152.4" y2="193.04" width="0.1524" layer="91"/>
 <label x="162.56" y="193.04" size="1.27" layer="95" xref="yes"/>
-<pinref part="D2" gate="G$1" pin="A"/>
 <wire x1="152.4" y1="193.04" x2="162.56" y2="193.04" width="0.1524" layer="91"/>
 <junction x="152.4" y="193.04"/>
+<pinref part="D2" gate="G$1" pin="A"/>
+<wire x1="152.4" y1="198.12" x2="152.4" y2="193.04" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <label x="233.68" y="53.34" size="1.27" layer="95" xref="yes"/>

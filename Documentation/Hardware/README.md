@@ -9,7 +9,10 @@ photomultiplier detector characterisation.
 
 ![Dimensions](https://github.com/PaulZC/Nanosecond_LED_Flasher_Shield/blob/master/img/Dimensions.JPG)
 
-The full schematic is available [here](https://github.com/PaulZC/Nanosecond_LED_Flasher_Shield/blob/master/Hardware/Schematic.pdf)
+The full schematic is available [here](https://github.com/PaulZC/Nanosecond_LED_Flasher_Shield/blob/master/Hardware/Schematic.pdf).
+
+The BOM is available in [PDF format](https://github.com/PaulZC/Nanosecond_LED_Flasher_Shield/blob/master/Hardware/BOM.pdf)
+and [ODS format](https://github.com/PaulZC/Nanosecond_LED_Flasher_Shield/blob/master/Hardware/BOM.ods).
 
 The LED is driven by the new [LMG1025 from Texas Instruments](http://www.ti.com/product/LMG1025-Q1).
 Designed for automotive LIDAR applications, this gate driver has typical rise and fall times of 650ps
